@@ -1,20 +1,17 @@
-# Projeto: (substitua pelo nome do projeto quando estiver definido)
+# Projeto: Impacto dos fatores ambientais e climáticos na propagação do Covid-19
 
-## Equipe: (substitua pelo nome da equipe)
+## Equipe: Trio Nordeste
 
-## Descrição: (descreva seu projeto quando estiver definido)
+## Descrição: 
 
-## Membros senior: (liste os membros informando nome, RA, login gitlab, universidade. siga o exemplo abaixo)
-
-Nome Membro 01, RA_Membro_01, login_membro_01, UNICAMP
-
-Nome Membro 02, RA_Membro_02, login_membro_02, UTFPR
-
-Nome Membro 03, RA_Membro_03, login_membro_03, UNICAMP
+Com as constantes mudanças climáticas atuais do planeta, devemos nos preocupar com o impacto que estes eventos podem causar, com relação ao ecossistema e os seres que vivem nele.
+Algumas pesquisas já demonstram que mudanças no clima planetário já causam efeitos adversos na saúde humana. Atualmente o vírus SARS-CoV-2 tem infectado e se espalhado em altas taxas. Devido a novidade dos fatos e a falta de informações concretas sobre este novo vírus, diferentes pesquisas têm buscado identificar fatores que ajudem a traçar maneiras de contenção da infecção. 
+Observa-se que as taxas de propagação demonstradas em alguns países são totalmente diferentes. Algumas possíveis causas podem ser observadas para este fato, entre estas, a correlação entre o clima corrente e a propagação da doença na população.
+Este estudo propõe observar quais os impactos do clima em relação ao SARS-CoV-2, correlacionando o espalhamento com o ambiente que a doença está inserida.
 
 
-## Membros junior (se houver): (liste os membros informando nome, RA, login gitlab, universidade. siga o exemplo abaixo)
+## Membros senior:
 
-Nome Membro 04, RA_Membro_04, login_membro_04, UNICAMP
-
-Nome Membro 05, RA_Membro_05, login_membro_05, UTFPR
+* Andressa, 262878, AndressaMarcal, a262878@dac.unicamp.br, Mestrado Ciência da Computação, Unicamp
+* Décio, 226072, @d226072, d226072@dac.unicamp.br, Doutorado Ciência da Computação, Unicamp
+* Diego, 230640, @alyssonbm, d230640@dac.unicamp.br, Doutorado Ciência da Computação, Unicamp.
