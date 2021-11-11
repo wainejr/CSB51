@@ -9,3 +9,6 @@ Instructions
 * Sanitize `main_pnas.py` and `visualize_pnas.py` to ensure all input directories, input files, and output directories are present.
 * Run `python main_pnas.py` to execute Topics over Time algorithm.
 * Run `python visualize_pnas.py` to visualize the topic-word distributions as well as the beta distributions showing evolution of topics with time.
+
+[Original Git](https://github.com/ahmaurya/topics_over_time)
+
