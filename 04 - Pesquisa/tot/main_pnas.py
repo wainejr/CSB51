@@ -20,11 +20,11 @@ import pickle
 
 
 def main():
-    datapath = "../../data/pnas/"
-    resultspath = "../results/pnas_tot/"
-    documents_path = datapath + "alltitles"
-    timestamps_path = datapath + "alltimes"
-    stopwords_path = datapath + "allstopwords"
+    datapath = "data/pnas/"
+    resultspath = "results/pnas_tot/"
+    documents_path = datapath + "alltitles.csv"
+    timestamps_path = datapath + "alltimes.csv"
+    stopwords_path = datapath + "allstopwords.csv"
     tot_topic_vectors_path = resultspath + "pnas_tot_topic_vectors.csv"
     tot_topic_mixtures_path = resultspath + "pnas_tot_topic_mixtures.csv"
     tot_topic_shapes_path = resultspath + "pnas_tot_topic_shapes.csv"

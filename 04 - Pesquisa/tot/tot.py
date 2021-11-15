@@ -19,9 +19,11 @@ import random
 import scipy.special
 import math
 import numpy as np
+import pandas as pd
 import scipy.stats
 import pickle
 from math import log
+from copy import deepcopy
 
 
 class TopicsOverTime:
@@ -41,11 +43,13 @@ class TopicsOverTime:
             documents.append(words)
             dictionary.update(set(words))
         for timestamp in fileinput.input(timestamps_path):
-            num_titles = int(timestamp.strip().split()[0])
-            timestamp = float(timestamp.strip().split()[1])
-            timestamps.extend([timestamp for title in range(num_titles)])
+            #num_titles = int(timestamp.strip().split()[0])
+            timestamp = float(timestamp.strip().split()[0])
+            timestamps.extend([timestamp])
+            #timestamps.extend([timestamp for title in range(num_titles)])
         for line in fileinput.input(stopwords_path):
-            stopwords.update(Set(line.lower().strip().split()))
+            stopwords.update(set(line.lower().strip().split()))
+            #stopwords.update(Set(line.lower().strip().split()))
         first_timestamp = timestamps[0]
         last_timestamp = timestamps[len(timestamps) - 1]
         timestamps = [
@@ -68,7 +72,7 @@ class TopicsOverTime:
     def InitializeParameters(self, documents, timestamps, dictionary):
         par = {}  # dictionary of all parameters
         par["dataset"] = "pnas"  # dataset name
-        par["max_iterations"] = 100  # max number of iterations in gibbs sampling
+        par["max_iterations"] = 10  # max number of iterations in gibbs sampling
         par["T"] = 10  # number of topics
         par["D"] = len(documents)
         par["V"] = len(dictionary)
@@ -218,7 +222,7 @@ class TopicsOverTime:
                         topic_probabilities = [
                             p / sum_topic_probabilities for p in topic_probabilities
                         ]
-
+                    topic_probabilities = pd.Series(topic_probabilities).fillna(0).tolist()
                     new_topic = list(
                         np.random.multinomial(1, topic_probabilities, size=1)[0]
                     ).index(1)
