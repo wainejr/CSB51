@@ -72,8 +72,8 @@ class TopicsOverTime:
     def InitializeParameters(self, documents, timestamps, dictionary):
         par = {}  # dictionary of all parameters
         par["dataset"] = "pnas"  # dataset name
-        par["max_iterations"] = 10  # max number of iterations in gibbs sampling
-        par["T"] = 10  # number of topics
+        par["max_iterations"] = 60  # max number of iterations in gibbs sampling
+        par["T"] = 5  # number of topics
         par["D"] = len(documents)
         par["V"] = len(dictionary)
         par["N"] = [len(doc) for doc in documents]
