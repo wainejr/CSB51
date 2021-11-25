@@ -62,7 +62,7 @@ def VisualizeTopics(phi, words, num_topics, viz_threshold=9e-3):
 
 def VisualizeEvolution(psi):
     xs = np.linspace(0.0001, 0.9999, num=1000)
-    #xs = np.linspace(0, 1, num=1000)
+    # xs = np.linspace(0, 1, num=1000)
     fig, ax = plt.subplots()
 
     for i in range(len(psi)):
